@@ -58,4 +58,10 @@ Public Class userProfileCreate {
     public void setPassword(String Password) {
         this.Password = Password;
     }
+    public String getAboutMe(){
+        return Aboutme; 
+    }
+    public String setAboutMe(String Aboutme){
+        this.Aboutme = Aboutme; 
+    }
 }
