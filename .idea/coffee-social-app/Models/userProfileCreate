@@ -1,0 +1,20 @@
+Public Class userProfileCreate {
+    Private String Username; 
+    Private String Email; 
+    Private String Firstname; 
+    Private String Password; 
+    Private String Aboutme; 
+
+    Public userProfileCreate(){
+
+    }
+    Public userProfileCreate(String Username, String Email, String Firstname, String Password, String Aboutme){
+        this(); 
+        this.Username = Username; 
+        this.Email = Email; 
+        this.Firstname = Firstname; 
+        this.Password = Password; 
+        this.Aboutme = Aboutme; 
+    }
+    
+}
