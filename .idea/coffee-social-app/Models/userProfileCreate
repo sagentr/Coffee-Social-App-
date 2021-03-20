@@ -1,4 +1,4 @@
-Public Class userProfileCreate {
+Public class userProfileCreate {
     Private String Username; 
     Private String Email; 
     Private String Firstname; 
