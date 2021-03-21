@@ -4,7 +4,7 @@ import org.springframework.web.bind.annotation.*;
 
 @Controller
 @Requestmapping("User")
-Public class ProfileViewController{
+public class ProfileViewController{
 
 
     @GetMapping("")
