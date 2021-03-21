@@ -4,19 +4,21 @@ public abstract class userProfileCreate {
     private String Username; 
     private String Email; 
     private String Firstname; 
+    private String Aboutme;
     private String Password; 
-    private String Aboutme; 
+     
 
    
 
     }
-    public userProfileCreate(String Username, String Email, String Firstname, String Password, String Aboutme){
+    public userProfileCreate(String Username, String Email, String Firstname, String Aboutme, String Password){
         this(); 
         this.Username = Username; 
         this.Email = Email; 
         this.Firstname = Firstname; 
+        this.Aboutme = Aboutme;
         this.Password = Password; 
-        this.Aboutme = Aboutme; 
+        
     }
     public  userProfileCreate() {
         

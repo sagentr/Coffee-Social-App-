@@ -6,22 +6,39 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 
 @Controller
-Public class CreateUserController<createProfile>{
+public class CreateUserController<createProfile> {
+
+
+  
+
+
 
     @GetMapping 
-    Public String displayUserSignUp (Model, Model){
-        return "createNewUser"; 
+    public String displayUserSignUp (Model Model){
+        model.addAttribute(new userProfileCreate()); 
+        model.addAttribute("Username", Username); 
+        model.addAttribute("Email", Email); 
+        model.addAttribute("Firstname", Firstname); 
+        model.addAttribute("Aboutme", Aboutme); 
+        model.addAttribute("Password", Password); 
+        
     }
 
     @PostMapping 
-    Public String processUserSignUp(@RequestParam String Email, @RequestParam String Username, @RequestParam String Firstname, @RequestParam String Aboutme,
-    @RequestParam Password){
+    public String processUserSignUp(@RequestParam String Email, @RequestParam String Username, @RequestParam String Firstname, @RequestParam String Aboutme,
+    @RequestParam String Password){
         User newUser = new User(Email, Username, Firstname, Aboutme, Password); 
         model.addAttribute("User", newUser);
+
+    }
 
         return "editProfileView"; 
     
     }
 
-
 }
+
+
+
+
+    

@@ -7,21 +7,30 @@ import org.springframework.web.bind.annotation.*;
 public class ProfileViewController{
 
 
-    @GetMapping("")
+    @GetMapping("Username")
     public String displayUserName() {
         return getUserName; 
     }
 
-    @GetMapping ("")
+    @GetMapping ("Firstname")
     public String displayFirstName(){
         return getFirstName; 
     }
 
-    @GetMapping("")
+    @GetMapping("AboutMe")
     public String displayAboutMe(){
         return getAboutMe; 
     }
 
- 
+    @GetMapping("coffeeTastes")
+        public String displayCoffeeTastes(){
+            return getCoffeeTastes; 
+        }
+
+    @GetMapping("foodTastes")
+        public String displayFoodTastes(){
+            return getFoodTastes;
+        }
+    
 
 }
