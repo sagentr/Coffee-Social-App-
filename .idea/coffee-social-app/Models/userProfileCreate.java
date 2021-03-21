@@ -1,61 +1,72 @@
+import coffee-social-app\Models\newUserApplication.java;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.MappedSuperclass;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
+import java.util.Objects;
 
-@Entity
+
+@MappedSuperclass
 public abstract class userProfileCreate {
-    private String Username; 
-    private String Email; 
-    private String Firstname; 
-    private String Aboutme;
-    private String Password; 
-     
 
+    @Id
+    @GeneratedValue
+    private int id;
+  
+    @NotBlank(message = "Field, 'Username', is required.")
+    @Size(min=3, max=15)
+    private String username; 
+
+    private String firstname; 
+    
+    private String password; 
+     
+   
+    
    
 
-    }
-    public userProfileCreate(String Username, String Email, String Firstname, String Aboutme, String Password){
-        this(); 
-        this.Username = Username; 
-        this.Email = Email; 
-        this.Firstname = Firstname; 
-        this.Aboutme = Aboutme;
-        this.Password = Password; 
+    
+    public userProfileCreate(String username, String email, String firstname, String aboutme, String password){
+        this.username = username; 
+        this.firstname = firstname; 
+        this.password = password; 
         
     }
-    public  userProfileCreate() {
+   
+    @Override
+    public boolean equals(Object o) {
+       if (this == o) return true;
+       if (o == null || getClass() != o.getClass()) return false;
+       userProfileCreate entity = (userProfileCreate) o;
+       return id == entity.id;
+    }
         
-    
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
+    }
 
-    
+    public int getId() {
+        return this.id;
+    }
 
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     
-   public String getUsername() {
-        return Username;
-    }
-
-    public void setUsername(String Username) {
-        this.Username = Username;
-    }
-
-    public String getEmail() {
-        return Email;
-    }
-
-    public void setEmail(String Email) {
-        this.Email = Email;
-    }
-
     public String getPassword() {
-        return Password;
+        return password;
     }
 
-    public void setPassword(String Password) {
-        this.Password = Password;
+    public void setPassword(String password) {
+        this.password = password;
     }
-    public String getAboutMe(){
-        return Aboutme; 
-    }
-    public String setAboutMe(String Aboutme){
-        this.Aboutme = Aboutme; 
-    }
+    
 }

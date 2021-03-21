@@ -1,3 +1,4 @@
+import coffee-social-app\Models\newUserApplication.java;
 import coffee-social-app\Models\userProfileCreate; 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
