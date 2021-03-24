@@ -1,4 +1,5 @@
-import coffee-social-app\Models\newUserApplication.java;
+import Models.UserEmail.java; 
+import Models.AboutMe.java; 
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
