@@ -1,5 +1,5 @@
-import coffee-social-app\Models\newUserApplication.java;
-import coffee-social-app\Models\userProfileCreate; 
+import coffee-social-app.Models.newUserApplication.java;
+import coffee-social-app.Models.userProfileCreate;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
@@ -11,14 +11,14 @@ public class UserEmail extends userProfileCreate{
 
     @Valid
     @NotBlank(message = "Field, 'Email', is required.")
-    private String email; 
-    
-    
+    private String email;
+
+
 }
 
 public UserEmail(){}
 
-//Write method for Validating email. 
+//Write method for Validating email.
 
 public String getEmail() {
     return email;

@@ -14,7 +14,7 @@ public class UserProfiletests{
 
 @Before
   public void setUp(){
-new_User_1 = new userProfileCreate("Izzy_Au_Lait", "isabella_jones@gmail.com", "Izzy", "My favorite things in the world are coffee and cake",
+new_User_1 = new userProfileCreate("Izzy_Macchiato", "isabella_jones@gmail.com", "Izzy", "My favorite things in the world are coffee and cake",
   "iheartcoffee");
 new_User_2 = new UserProfileCreate("CoffeeFiend", "Stanley_Smith@yahoo.com", "S.", "Just here to drink that hot bean juice", "Passowrd");
 }

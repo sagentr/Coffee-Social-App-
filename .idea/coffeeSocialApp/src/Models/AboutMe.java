@@ -1,5 +1,5 @@
-import coffee-social-app\Models\newUserApplication.java;
-import coffee-social-app\Models\userProfileCreate; 
+import coffee-social-app.Models.newUserApplication.java;
+import coffee-social-app.Models.userProfileCreate;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
@@ -11,39 +11,39 @@ import java.util.Objects;
 public class AboutMe extends userProfileCreate {
 
     @Size(max=500)
-    private String aboutme; 
+    private String aboutme;
 
     @Size(max=200)
-    private String coffeeTaste; 
+    private String coffeeTaste;
 
     @Size(max=200)
-    private String foodTaste; 
+    private String foodTaste;
 
 
-    
+
    public AboutMe(){}
-    
+
 }
 
 public String getAboutMe(){
-    return aboutme; 
+    return aboutme;
 }
 public String setAboutMe(String aboutme){
-    this.aboutme = aboutme; 
+    this.aboutme = aboutme;
 }
 
 public String getCoffeeTaste(){
-    return coffeeTaste; 
+    return coffeeTaste;
 }
 
 public String setCoffeeTaste(String coffeeTaste){
-    this.coffeeTaste= coffeeTaste; 
+    this.coffeeTaste= coffeeTaste;
 }
 
 public String getFoodTaste(){
-    return foodTaste; 
+    return foodTaste;
 }
 
 public String setFoodTaste(String foodTaste){
-    this.foodTaste= foodTaste; 
+    this.foodTaste= foodTaste;
 }

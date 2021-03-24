@@ -1,5 +1,5 @@
-import coffee-social-app\Models\newUserApplication.java;
-import coffee-social-app\Models\userProfileCreate;
+import coffee-social-app.Models.newUserApplication.java;
+import coffee-social-app.Models.userProfileCreate;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
