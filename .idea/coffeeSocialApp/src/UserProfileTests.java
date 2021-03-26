@@ -8,8 +8,12 @@ import static org.junit.Assert.assertTrue;
 
 public class UserProfiletests{
 
-  UserProfileCreate new_User_1;
-  UserProfileCreate new_User_2;
+  userProfileCreate new_User_1;
+  userProfileCreate new_User_2;
+  userProfileCreate new_User_3; 
+  userProfileCreate new_User_4; 
+  userProfileCreate new_User_5; 
+  
 
 
 @Before
@@ -17,6 +21,9 @@ public class UserProfiletests{
 new_User_1 = new userProfileCreate("Izzy_Macchiato", "isabella_jones@gmail.com", "Izzy", "My favorite things in the world are coffee and cake",
   "iheartcoffee");
 new_User_2 = new UserProfileCreate("CoffeeFiend", "Stanley_Smith@yahoo.com", "S.", "Just here to drink that hot bean juice", "Passowrd");
+new_User_3 = new UserProfileCreate("I_am_A_Latte", "ashleyAshley@outlook.com", "Ashley", null, "Passowrd" ); 
+new_User_4 = new UserProfileCreate(null, "Stanley_Smith@yahoo.com", "Stan", "I forgot my Username", "whoops"); 
+new_User_5 = new UserProfileCreate("Forgetful_Fred", null, "Freddy", "I forgot my email.", "oopsies"); 
 }
 
   //Does my UserId generate?
