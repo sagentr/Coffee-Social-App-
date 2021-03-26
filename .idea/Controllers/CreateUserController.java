@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.Objects;
 
 @Controller
+@RequestMapping("NewUserSignUp")
 public class CreateUserController<createProfile> {
 
 
@@ -23,8 +24,11 @@ public class CreateUserController<createProfile> {
         model.addAttribute("Firstname", Firstname); 
         model.addAttribute("Aboutme", Aboutme); 
         model.addAttribute("Password", Password); 
+    
+   
+}
         
-    }
+    
 
     @PostMapping 
     public String processUserSignUp(@RequestParam String Email, @RequestParam String Username, @RequestParam String Firstname, @RequestParam String Aboutme,

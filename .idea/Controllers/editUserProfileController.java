@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.Objects;
 
+@Controller
+@RequestMapping("editProfileView")
 public class editUserProfileController<editProfile>{
 
     @GetMapping 
@@ -18,6 +20,8 @@ public class editUserProfileController<editProfile>{
         model.addAttribute("CoffeeTaste", coffeeTaste); 
         model.addAttribute("FoodTaste", foodTaste);
         model.addAttribute("changePassword", password); 
+
+        
         
     }
 
