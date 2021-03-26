@@ -1,19 +1,16 @@
 import Models.UserEmail.java; 
 import Models.AboutMe.java; 
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.MappedSuperclass;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 import java.util.Objects;
 
 
-@MappedSuperclass
-public abstract class userProfileCreate {
 
-    @Id
-    @GeneratedValue
+public class userProfileCreate {
+
     private int id;
+    private static int nextId = 1;
+
   
     @NotBlank(message = "Field, 'Username', is required.")
     @Size(min=3, max=15)
@@ -22,16 +19,20 @@ public abstract class userProfileCreate {
     private String firstname; 
     
     private String password; 
+
+    
+    public userProfileCreate() {
+        id = nextId;
+        nextId++;
+    }
      
    
     
-   
-
-    
-    public userProfileCreate(String username, String email, String firstname, String aboutme, String password){
+   public userProfileCreate(String username, String email, String firstname, String aboutme, String password){
         this.username = username; 
         this.firstname = firstname; 
         this.password = password; 
+
         
     }
    

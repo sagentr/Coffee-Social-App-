@@ -1,10 +1,11 @@
-import coffee-social-app\Models\newUserApplication.java;
-import coffee-social-app\Models\userProfileCreate; 
+import Models.newUserApplication.java;
+import Models.userProfileCreate; 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
+import java.util.Objects;
 
 @Controller
 public class CreateUserController<createProfile> {
