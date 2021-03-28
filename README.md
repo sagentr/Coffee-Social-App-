@@ -20,6 +20,12 @@ A "View Profile" View (which calls the information from Username, First name, Ab
 
 If I have the time to make a repository for the login information, I would like to of course implement password encryption, but
  also more validation in the form process to keep bots out in our user sign up process. 
-
-
+------------
+The review feature includes one of the main concepts for the app: to document an avid coffee drinker's experiences cup by cup. On the front end side, there are three big components. The first is to create the initial review, the second is to review your personal library of reviews with limited info on each entry, and the last to inspect these previous reviews to see all the information. The front end is using a reactive form with validation. An object is created to store these details to send to backend using http requests. The library and consequent previous post inspection will depend on the backend implementing the data, but will be templated by the front end.  The MVP of a review will include the following details:
+-time stamp *displayed in library.*
+-name of business *displayed in library. - link/collab to maps feature to tag on their end*
+-name of beverage
+-atmosphere
+-overall rating *displayed in library.*
+-personal summary
 
